@@ -35,7 +35,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 
 	for {
-		fmt.Println("\n--- Bank System ---")
+		fmt.Println("\n______Bank System______")
 		fmt.Println("1. Deposit")
 		fmt.Println("2. Withdraw")
 		fmt.Println("3. Check Balance")
