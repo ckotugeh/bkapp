@@ -8,11 +8,11 @@ import (
 	"strings"
 )
 
-type BankAccount struct {
+type BankAccount struct { // this struct declare bank account and balce type as float64
 	balance float64
 }
 
-func (b *BankAccount) Deposit(amount float64) {
+func (b *BankAccount) Deposit(amount float64) { 
 	b.balance += amount
 	fmt.Println("Deposit successful")
 }
@@ -44,7 +44,7 @@ func main() {
 
 		input, err := reader.ReadString('\n')
 		if err != nil {
-			// 🔴 FIX: exit if no input (prevents timeout)
+			// FIX: exit if no input (prevents timeout)
 			fmt.Println("\nNo input detected. Exiting...")
 			return
 		}
